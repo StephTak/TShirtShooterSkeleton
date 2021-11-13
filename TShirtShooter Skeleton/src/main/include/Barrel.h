@@ -8,7 +8,7 @@ public:
 
 enum States {
     UP, DOWN, STOP_BARREL
-}
+};
 States current_state;
 
 WPI_TalonSRX *BarrelMotor;
