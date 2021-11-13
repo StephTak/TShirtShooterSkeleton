@@ -8,28 +8,28 @@ Barrel::Barrel(){
 
 Barrel::StateMachine(){
     switch (current_state){
-        case States::Up:
-        Up();
+        case States::UP:
+        UP();
             break;
 
-        case States::Down:
-        Down();
+        case States::DOWN:
+        DOWN();
             break;
         
-        case States::Stop:
-        Stop();
+        case States::STOP:
+        STOP();
             break;
     }
 
 }
 
-Barrel::Up(){
+Barrel::UP(){
     BarrelMotor->Set(.3);
 }
 
-Barrel::Down(){
+Barrel::DOWN(){
     BarrelMotor->Set(-.3);
 }
-Barrel::Stop(){
+Barrel::STOP(){
     BarrelMotor->Set(0);
 }

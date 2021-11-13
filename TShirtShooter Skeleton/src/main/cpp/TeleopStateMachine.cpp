@@ -5,7 +5,7 @@ TeleopStateMachine::TeleopStateMachine(frc::Joystick *joystick_)
 {
     joystick = joystick_;
     
-    current_state = States::STOP;
+    current_state = States::;
 }
 
 void TeleopStateMachine::UpdateButtons(){
@@ -47,7 +47,6 @@ void TeleopStateMachine::StateMachine(){
 
     switch (current_state)
     {
-        barrel-> StateMachine
     case States::INIT:
         break;
     
@@ -61,15 +60,15 @@ void TeleopStateMachine::StateMachine(){
         break;
 
     case States::UP:
-        barrel->current_state=Barrel::State::UP;
+        barrel->current_state=Barrel::States::UP;
         break;
 
     case States::DOWN:
-        barrel->current_state=Barrel::State::DOWN;
+        barrel->current_state=Barrel::States::DOWN;
         break;
 
     case States::STOP_BARREL:
-        barrel->current_state=Barrel::State::STOP_BARREL;
+        barrel->current_state=Barrel::States::STOP_BARREL;
         break;
 
     case States::EMERGENCY:
@@ -77,7 +76,8 @@ void TeleopStateMachine::StateMachine(){
 
     case States::SLOW_BARREL:
         break;
-        
+       
+    barrel->StateMachine(); 
     }
 
 }
