@@ -10,25 +10,26 @@ Barrel::StateMachine(){
     switch (current_state){
         case States::Up:
         Up();
-        break;
+            break;
+
         case States::Down:
         Down();
-        break;
+            break;
+        
         case States::Stop:
         Stop();
-        break;
+            break;
     }
 
 }
 
 Barrel::Up(){
-    move barrel up 1 ppt
-    up_button
+    BarrelMotor->Set(.3);
 }
 
 Barrel::Down(){
-    down_button
+    BarrelMotor->Set(-.3);
 }
 Barrel::Stop(){
-    emergency_button
+    BarrelMotor->Set(0);
 }
