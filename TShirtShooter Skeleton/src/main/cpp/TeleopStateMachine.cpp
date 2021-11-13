@@ -49,19 +49,15 @@ void TeleopStateMachine::StateMachine(){
     {
         barrel-> StateMachine
     case States::INIT:
-        barrel->current_state=Barrel::State::INIT;
         break;
     
     case States::RUN:
-        barrel->current_state=Barrel::State::RUN;
         break;
 
     case States::STOP:
-        barrel->current_state=Barrel::State::STOP;
         break;
 
     case States::SHOOT:
-        barrel->current_state=Barrel::State::SHOOT;
         break;
 
     case States::UP:
@@ -77,11 +73,9 @@ void TeleopStateMachine::StateMachine(){
         break;
 
     case States::EMERGENCY:
-        barrel->current_state=Barrel::State::EMERGENCY;
         break;
 
     case States::SLOW_BARREL:
-        barrel->current_state=Barrel::State::SLOW_BARREL;
         break;
         
     }
