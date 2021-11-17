@@ -5,7 +5,7 @@ TeleopStateMachine::TeleopStateMachine(frc::Joystick *joystick_, Barrel *barrel_
 {
     joystick = joystick_;
     barrel = barrel_;
-    current_state = States::;
+    current_state = States::INIT;
 }
 
 void TeleopStateMachine::UpdateButtons(){
