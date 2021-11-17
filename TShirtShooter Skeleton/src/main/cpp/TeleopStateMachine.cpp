@@ -54,6 +54,7 @@ void TeleopStateMachine::StateMachine(){
         break;
 
     case States::STOP:
+        barrel->current_state=Barrel::States::STOP;
         break;
 
     case States::SHOOT:
@@ -68,7 +69,6 @@ void TeleopStateMachine::StateMachine(){
         break;
 
     case States::STOP_BARREL:
-        barrel->current_state=Barrel::States::STOP_BARREL;
         break;
 
     case States::EMERGENCY:
