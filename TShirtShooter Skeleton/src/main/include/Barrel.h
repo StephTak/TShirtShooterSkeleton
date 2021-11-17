@@ -7,7 +7,7 @@ class Barrel {
 public: 
 
 enum States {
-    UP, DOWN, STOP_BARREL
+    UP, DOWN, STOP
 };
 States current_state;
 

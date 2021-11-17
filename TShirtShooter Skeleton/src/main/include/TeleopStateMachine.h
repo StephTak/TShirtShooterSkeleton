@@ -37,7 +37,7 @@ public:
     bool down;
     bool emergency;
 
-    TeleopStateMachine(frc::Joystick *joystick_);
+    TeleopStateMachine(frc::Joystick *joystick_, Barrel *barrel_);
     void UpdateButtons();
     void StateMachine();
 };

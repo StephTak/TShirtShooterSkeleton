@@ -9,15 +9,15 @@ Barrel::Barrel(){
 Barrel::StateMachine(){
     switch (current_state){
         case States::UP:
-        UP();
+        Up();
             break;
 
         case States::DOWN:
-        DOWN();
+        Down();
             break;
         
         case States::STOP:
-        STOP();
+        Stop();
             break;
     }
 
