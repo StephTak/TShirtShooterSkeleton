@@ -4,8 +4,7 @@
 #include <frc/Joystick.h>
 #include "Barrel.h"
 
-class TeleopStateMachine
-{
+class TeleopStateMachine {
 private:
     /* data */
 public:
