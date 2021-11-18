@@ -23,7 +23,4 @@ WPI_TalonSRX *BarrelMotor;
 private:
 
 
-
-
-
 }

@@ -20,5 +20,7 @@ public:
 
 	DriveController();
 	void Drive(frc::Joystick *joyThrottle);
+private: 
+
 
 };

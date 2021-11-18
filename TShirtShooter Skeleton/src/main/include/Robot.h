@@ -31,7 +31,7 @@ class Robot : public frc::TimedRobot {
   frc::Joystick *controller;
   DriveController *drive;
   TeleopStateMachine *tsm;
-  Barrel *barrel
+  Barrel *barrel;
 
  private:
   frc::SendableChooser<std::string> m_chooser;
