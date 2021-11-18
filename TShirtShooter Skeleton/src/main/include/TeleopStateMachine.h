@@ -3,6 +3,7 @@
 #include <frc/smartdashboard/SmartDashboard.h>
 #include <frc/Joystick.h>
 #include "Barrel.h"
+#include "Robot.h"
 
 class TeleopStateMachine {
 private:
@@ -18,7 +19,7 @@ public:
     States current_state;
 
     frc::Joystick *joystick;
-    frc::Barrel *barrel;
+    Barrel *barrel;
 
     int start_compressor_button = 5;
     int stop_compressor_button = 6;
