@@ -15,32 +15,22 @@ DriveController::DriveController()
 void DriveController::Drive(frc::Joystick *joyThrottle)
 {
 
-    if (joyThrottle->GetPOV() == 0)
-    {
+    if (joyThrottle->GetPOV() == 0) {
         x_input = 0;
         y_input = 1;
-    }
-    else if (joyThrottle->GetPOV() == 45)
-    {
+    } else if (joyThrottle->GetPOV() == 45) {
         x_input = 1;
         y_input = 1;
-    }
-    else if (joyThrottle->GetPOV() == 90)
-    {
+    } else if (joyThrottle->GetPOV() == 90) {
         x_input = 1;
         y_input = 0;
-    }
-    else if (joyThrottle->GetPOV() == 135)
-    {
+    } else if (joyThrottle->GetPOV() == 135) {
         x_input = 1;
         y_input = -1;
-    }
-    else if (joyThrottle->GetPOV() == 180)
-    {
+    } else if (joyThrottle->GetPOV() == 180) {
         x_input = 0;
         y_input = -1;
-    }
-    else if (joyThrottle->GetPOV() == 225)
+    } else if (joyThrottle->GetPOV() == 225)
     {
         x_input = -1;
         y_input = -1;
