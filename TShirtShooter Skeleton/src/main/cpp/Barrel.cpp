@@ -5,7 +5,7 @@ Barrel::Barrel(){
     BarrelMotor = new WPI_TalonSRX(28);
 }
 
-Barrel::StateMachine(){
+void Barrel::StateMachine(){
     switch (current_state){
         case States::UP:
         Up();
