@@ -9,9 +9,8 @@
 #include <frc/TimedRobot.h>
 #include <frc/smartdashboard/SendableChooser.h>
 #include <frc/Joystick.h>
-#include "Barrel.h"
 
-#include "TeleopStateMachine.h"
+
 #include "DriveController.h"
 
 class Robot : public frc::TimedRobot {
