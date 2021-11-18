@@ -1,5 +1,6 @@
 #include "Barrel.h"
 #include "TeleopStateMachine.h"
+#include "Robot.h"
 #include <frc/smartdashboard/SmartDashboard.h>
 
 Barrel::Barrel(){
