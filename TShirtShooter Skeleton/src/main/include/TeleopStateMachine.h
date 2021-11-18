@@ -18,7 +18,7 @@ public:
     States current_state;
 
     frc::Joystick *joystick;
-    Barrel *barrel;
+    frc::Barrel *barrel;
 
     int start_compressor_button = 5;
     int stop_compressor_button = 6;
