@@ -2,8 +2,6 @@
 
 #include <frc/smartdashboard/SmartDashboard.h>
 #include <frc/Joystick.h>
-#include "Barrel.h"
-#include "Robot.h"
 
 class TeleopStateMachine {
 private:
