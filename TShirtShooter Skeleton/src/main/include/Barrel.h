@@ -1,6 +1,5 @@
 #pragma once
 
-#include "TeleopStateMachine.h"
 #include <ctre/Phoenix.h>
 
 class Barrel {

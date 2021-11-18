@@ -1,7 +1,8 @@
 #include "TeleopStateMachine.h"
 
 
-TeleopStateMachine::TeleopStateMachine(frc::Joystick *joystick_, Barrel *barrel_) {
+TeleopStateMachine::TeleopStateMachine(frc::Joystick *joystick_, Barrel *barrel_)
+{
     joystick = joystick_;
     barrel = barrel_;
     current_state = States::INIT;
@@ -13,32 +14,32 @@ void TeleopStateMachine::UpdateButtons(){
 
     if(joystick->GetRawButton(8)){
         current_state = States::SHOOT;
-    };
+    }
     
 
     if(joystick->GetRawButton(5)){
 
         current_state = States::RUN;
-    };
+    } 
 
     if(joystick->GetRawButton(6)){
         current_state = States::STOP;
-    };
+    }
 
     if(joystick->GetRawButton(up_button)){
         current_state = States::UP;
-    };
+    }
 
     if(joystick->GetRawButton(down_button)){
         current_state = States::DOWN;
-    };
+    }
 
     if(joystick->GetRawButton(slow_button)){
         current_state = States::SLOW_BARREL;
-    };
+    }
 
     frc::SmartDashboard::PutNumber("state" ,(int) current_state);
-};
+}
 
 void TeleopStateMachine::StateMachine(){
 
@@ -77,6 +78,6 @@ void TeleopStateMachine::StateMachine(){
         break;
        
     barrel->StateMachine(); 
-    };
+    }
 
-};
+}
