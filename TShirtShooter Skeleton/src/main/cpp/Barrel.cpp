@@ -22,13 +22,13 @@ void Barrel::StateMachine(){
 
 }
 
-Barrel::Up(){
+void Barrel::Up(){
     BarrelMotor->Set(.3);
 }
 
-Barrel::Down(){
+void Barrel::Down(){
     BarrelMotor->Set(-.3);
 }
-Barrel::Stop(){
+void Barrel::Stop(){
     BarrelMotor->Set(0);
 }
