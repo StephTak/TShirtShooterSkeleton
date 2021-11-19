@@ -77,7 +77,7 @@ void TeleopStateMachine::StateMachine(){
     case States::SLOW_BARREL:
         break;
        
-    barrel->StateMachine(); 
+     
     }
-
+    barrel->StateMachine();
 }
