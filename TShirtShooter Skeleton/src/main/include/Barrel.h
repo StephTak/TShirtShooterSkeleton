@@ -1,5 +1,5 @@
 #pragma once
-
+#include <frc/smartdashboard/SmartDashboard.h>
 #include <ctre/Phoenix.h>
 
 class Barrel {
