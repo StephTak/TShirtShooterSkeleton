@@ -19,7 +19,7 @@ void Barrel::StateMachine(){
         Stop();
             break;
     }
-    frc::SmartDashboard::PutNumber("state" ,(int) current_state);
+    frc::SmartDashboard::PutNumber("barrel_state" ,(int) current_state);
 
 }
 
