@@ -10,7 +10,7 @@ TeleopStateMachine::TeleopStateMachine(frc::Joystick *joystick_, Barrel *barrel_
 
 void TeleopStateMachine::UpdateButtons(){
 
-    current_state = States::STOP_BARREL;
+    current_state = States::STOP;
 
     if(joystick->GetRawButton(8)){
         current_state = States::SHOOT;
